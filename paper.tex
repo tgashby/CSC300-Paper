@@ -1,0 +1,176 @@
+% 300 Paper, W '13
+
+% Two Column Format
+\documentclass[11pt]{article}
+%this allows us to specify sections to be single or multi column so that things like title page and table of contents are single column
+\usepackage{multicol}
+
+\usepackage{setspace}
+\usepackage{url}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%
+%%% Cover Page %%%
+%%%%%%%%%%%%%%%%%%
+
+% Cover page with abstract: A cover page included: title, name, date, "CSC 300," and an abstract. The abstract is one or two sentences of context about your issue.  Provide your focus question. Mention one or two relevant arguments.  Briefly explain your conclusion and why it is proper ethically.
+
+\title{\vfill World of Warcraft's New Way to Get You Hooked} %\vfill gives us the black space at the top of the page
+\author{
+By Taggart Ashby \vspace{10pt} \\
+CSC 300: Professional Responsibilities  \vspace{10pt} \\
+}
+\date{\today} %Or use \Today for today's Date
+
+\maketitle
+
+% [5%] Abstract (75 Words Max)
+% __ One or two sentences of context about your issue.
+% __ Provide your focus question.
+% __ Mention one or two relevant arguments.
+% __ Briefly explain your conclusion and why it is proper ethically. (Optimal total is 7 sentences or so….)
+
+\vfill  %in combination with \newpage this forces the abstract to the bottom of the page
+\begin{abstract}
+In July of 2011, Blizzard Entertainment replaced its World of Warcraft trial model with a new ``World of Warcraft Starter Edition'', allowing players to try the game for free indefinitely with certain restrictions. \cite{starterEditionNewsRelease} Some studies have shown a positive correlation between time spent playing Massively Multiplayer Online Role-Playing Games (MMORPGs) and addiction to MMORPGs. \cite{ProblemUsageAmongHighlyEngagedPlayers}\cite{JustAComputerGameRight} Is it ethical for Blizzard to have switched to this new model?
+
+Companies have been providing demo versions of software for as long as software has been available. I see no difference between World of Warcraft's new business model and other software demos that I've used. Based on the principles of Utilitarianism \cite{Utilitarianism}, restricting a free demo on the basis of a few scattered cases of mental instability is unethical, therefore World of Warcraft's new model \emph{is} ethical.
+\end{abstract}
+
+\thispagestyle{empty} %remove page number from title page
+\newpage
+
+
+%Create a table of contents with all headings of level 3 and above.
+%http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has info on customizing the table of contents
+\thispagestyle{empty}  %Remove page number from TOC
+\tableofcontents
+
+\newpage
+
+%end the 1 column format
+
+
+%start 2 column format
+\begin{multicols}{2}
+%Start numbering first page of content as page 1
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%
+%%% Known Facts  %%%
+%%%%%%%%%%%%%%%%%%%%
+
+% Undisputed facts in your domain of concern that lead to the question. Do not judge these facts or make anything like an argument for a conclusion. Just note the undisputed facts that give a general motivation for the question. Conclude this section with facts that lead to a controversy. The reader should naturally be asking the question you'll be asking by that point in your paper. In general, attach your facts to a specific case – the more specific and detailed the facts, the better for your analysis. Do NOT tell the whole story, ONLY the facts required to "raise" your question. Do not give a bulleted list of facts, write a simple narrative about the state of the world" in your given problem domain. Cite all facts to their sources.
+
+% [10%] Facts (500 Words Max) This is not a general "introduction" - it has a very specific purpose.
+%__ Give general context for the issue.
+%__ This section must present *ONLY ENOUGH* substantiated facts to raise the question for the reader (not to answer the question, additional facts may be introduced during analysis).
+% __ The facts section should end up leading the reader to ask the question you are about to ask (a controversy or a case ending poorly is a great way to do this).
+% __ Should not indicate anything about your answer to the question or hint at any particular conclusion.
+% __ Do not include the definitions of ethical systems or laws as background. Just raise your focus question.
+\section{Facts}
+
+World of Warcraft is an incredibly popular game with over 10 million subscribers. \cite{WoWPlayerCount} Players of World of Warcraft spend an average of 22 hours per week playing. \cite{PlayerMotivations} As of July 2011 World of Warcraft is free to play provided the player is willing to accept some restrictions. None of those restrictions hinder the number of hours one can play. \cite{StarterEditionFAQ} Multiple studies have shown that time spent playing a MMORPG, like World of Warcraft, correlates to addiction level in some individuals. \cite{ProblemUsageAmongHighlyEngagedPlayers}\cite{JustAComputerGameRight} The intensity with which many players play World of Warcraft or other MMORPGs has led to multiple deaths. \cite{SnowlyDeath}\cite{ShawnDeath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Question %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This is the ethical question you are interested in answering. It must be one simple sentence and lead to a yes/no answer. It needs to be very narrowly focused, specific, and not abstract at all. It must involve a detailed case in the general area of your interest. Following the research question, write a line or two about why your question is important or interesting to anyone, does the answer to anyone?
+
+% [5%] Focus Question (One Non-Compound Sentence Max followed by a short paragraph of 50 words Max)
+% __ Must be focused on a particular, specific case. More detail / less abstract is better.
+% __ Must call for a binary answer (yes / no) that you will draw based on your research and reasoning.
+%__ Should be followed (separately) by a single paragraph of 50 words max explaining the importance of this question and its relevance to software engineers (why should we care?). There should be a citation to an external source to validate such importance.
+
+\section{Research Question}
+Is Blizzard's switch to World of Warcraft: Starter Edition ethical? \\
+Blizzard's switch could precipitate an ``outbreak'' of videogame addiction leading to terrible incidents \cite{SnowlyDeath} and a sharp decline in the sale of games. With fewer games being purchased, software companies that focus on games would suffer.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Extant Arguments from External Sources %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This is where you gather and present the arguments made by others interested in the same or similar questions (or more general versions of your question specialized to your case) . Do not reveal your judgments, just repeat the arguments for in the best possible light from the arguer's perspective. Cover both sides of your question (the "yes" side and the "no" side) to get a complete picture of how others are thinking about it. Choose commentators with some reputation when possible, choose one or two "on the edge" when it adds to the discussion. Do not include any general ethical principles or SE Code in here unless explicitly utilized by the researchers in their arguments. Make each argument short and simple, do not use long quotes or explain more than is necessary to understand the arguments at a fairly abstract level. Cite all arguments to their sources.
+
+% [10%] Othersʼ Arguments (500 Words Max)
+% __ Summarize the main arguments others have made, citing sources for each one. Make each summary under a separate, descriptive subheading.
+% __ Must cover the strongest arguments on both sides of the issue. Make them clear, concise and objective (no opinion as to their strength).
+% __ Do not use bare ethical principles (including the Code) in this section - they are not "other's" arguments about your focus question.
+% __ Summarize all arguments very briefly at the end of this section.
+
+\section{Arguments}
+\subsection{Arguments Affirmative}
+\subsubsection{Differing Player Archetypes}
+Many studies and surveys disregard the fact that different types of people play MMORPGs for different reasons and these varying archetypes lead to a majority of players who are not in danger of addiction. By not making mention of this fact, sweeping generalizations are made without basis. \cite{PlayerMotivations}
+\subsubsection{More Time Online Does Not Mean Addiction}
+Many people who are characterized as spending ``excessive'' time online do not show symptoms of addiction, rather they show signs of psychological fulfillment that would otherwise elude them due to disabilities, circumstances, or social discomfort. Some people who are isolated or autistic find comfort in the use of the internet and games to create social relationships they would not have otherwise. \cite{IsThereEvidenceOfInternetAddiction}
+\subsubsection{Excessive Users Do Not Exhibit Addiction Symptoms}
+Users that spend more time playing the game than average exhibit characteristics that show using MMORPGs for social aspects of the in-game world as opposed to symptoms of addiction. These users would just as likely find fun elsewhere. \cite{ExcessiveUseForSocialAspects}
+\subsection{Arguments Negative}
+\subsubsection{More Intense Play By A Younger Audience Leads to Addiction}
+``MMORPGs are played more intensely than video games,'' and are played primarily by a younger audience. Persons under the age of 27 (i.e. the majority of players of MMORPGs) are far more susceptible to addiction due to a lack of self identity and self confidence. \cite{YoungerAudiencesGetAddicted}
+\subsubsection{Increased Time Playing Leads to Life Problems}
+The longer a person plays World of Warcraft, the likelier they are to experience issues in their lives. \cite{ProblemUsageAmongHighlyEngagedPlayers}
+\subsubsection{Addictive Games Have a Social Responsibility}
+Current efforts to warn players of online games' addictiveness are far too minimal and often non-existent. Warning labels should be printed on games and companies should contact users who play in excess of a set threshold. \cite{MMORPGSocialResponsibility}\\
+
+Arguments in favor of my conclusion that World of Warcraft \emph{is} ethical often boil down to the fact that people are complex and a simple correlation of time spent playing to a person being psychologically addicted is too far of a stretch. People play for a variety of reasons, many of which are psychologically fulfilling. Arguments against my conclusion bring up that often these players have immature brains and a lack of social identity due to age, leading to increased risk of addiction. They also cite studies that show increased play times leading to life issues and that the companies has a social responsibility to at least warn consumers of possible psychological consequences.
+
+%%%%%%%%%%%%%%%%
+%%% Analysis %%%
+%%%%%%%%%%%%%%%%
+
+% (1) Do a simple analysis of how the SE Code would apply to your question. Does the "Preamble" of the Code say anything about the actors in your question? Would an objective person agree that the Code, by its own terms, claims to govern the ethics of your question? (2) Give a short abstract of the basics of your expected analysis for your paper. What is your projected conclusion and what are the ethical principles to support your conclusion? How do the principles support your conclusion? (You will not be held to this conclusion in the end. Changes are to be expected, so give your best, first shot now.)
+
+% [70%] Your Analysis (About 3000 Words)
+% __ Start with a paragraph showing why the SE Code applies to your focus question. Do not merely conclude, but show the reader by application of Code principles.
+% __ Liberally utilize sub-headings organized by the relevant SE Code sections and particular arguments to delineate your lines of reasoning.
+% __ All your analysis must be thoroughly supported by reason and logic.
+% __ All claims must be supported by reputable primary sources and formal data.
+% __ Have 2-4 distinct sections of the SE code utilized in your analysis.
+%__ Code section 1 can be central to one piece of analysis only. For example, if you determine section 1.03 applies, then no other section 1 Code tenet may be used later as a section heading.
+% __ If discussion about “public good” is used, there must be data to support it. Simply writing “it benefits the general public because it would make many people happy” is insufficient.
+% __ Utilitarian, Rawlsian and Deontological analyses must be integrated into your analysis where appropriate. They should support your SE Code analysis, not be isolated from it. (Exceptions must be approved by Dr. Turner.)
+% __ Class readings should be referenced as appropriate to support your Code analysis.
+% __ There should be a clear cohesiveness to the analysis such that each argument logically flows into the next and the reader is logically convinced that your conclusion has strength. Your writing must explicitly provide substantial arguments through logic and data that will gain the respect of a skeptic.
+% __ Do not define ethical systems in your analysis unless they are required and are very brief (a few sentences maximum).
+% __ Opinions + Assumptions + Feelings > /dev/null
+
+\section{Analysis}
+
+Blizzard's World of Warcraft is a software system that runs on computers. \cite{WoWSystemReqs} Software systems are written by Software Engineers. \cite{ACMApprovesSECode} According to the Computer Society and the ACM, all Software Engineers should abide by the rules outlined in the the SE Code of Ethics. \cite{ACMApprovesSECode}\cite{SECode} Therefore, Blizzard's World of Warcraft Software Engineers are subject to “the Code.” \cite{SECode}
+
+\subsection{Definition of ``addiction''}
+Because this paper will often reference psychological addiction, it is important to make sure this notion is concrete before continuing.
+A person who is addicted will pathologically pursue rewards and/or relief through substance abuse or other behaviours, in this case playing World of Warcraft. \cite{DefinitionOfAddiction}
+
+``Addiction is characterized by inability to consistently abstain, impairment in behavioral control, craving, diminished recognition of significant problems with one’s behaviors and interpersonal relationships, and a dysfunctional emotional response.'' \cite{DefinitionOfAddiction}
+
+\subsection{SE Code Section 1.02\\Moderate the interests of the software engineer, the employer, the client and the users with the public good.}
+Potential to argue that opponents of my position would say that the game leads to addiction and more time spent playing it means higher chances of addiction. Addiction being bad for the ``public good'' and \emph{not} in the ``interests of the client.'' I will respond with sources saying that time does not correlate to addiction and that high levels of play time do not mean addiction.
+\subsection{SE Code Section 2.07\\Identify, document, and report significant issues of social concern, of which they are aware, in software or related documents, to the employer or the client.}
+Opponents have suggested warning labels and/or contacting players who exhibit signs of addiction. I may have to concede this point, I see nothing wrong with a few added measures.
+``Tip: Remember to take all things in moderation (even World of Warcraft!)'' - In-Game Tip! WoW is at least putting some effort forth.
+\subsection{SE Code Section 2.09\\Promote no interest adverse to their employer or client, unless a higher ethical concern is being compromised; in that case, inform the employer or another appropriate authority of the ethical concern.}
+The opposition will say that promoting more sales while increasing chances for game addiction is adverse to the client. Again I will argue that just because players are hooked and spending money, does not mean they are addicted and their lives are suffering.
+\subsection{SE Code Section 4.04\\Not engage in deceptive financial practices such as bribery, double billing, or other improper financial practices.}
+Getting young people hooked on games could be seen as deceptive financial practices in that young people lack impulse control and will be more willing to spend their money frivolously. I will argue that a person's money is their own business and it is not Blizzard's responsibility to ensure a consumer is spending their money wisely.
+
+%end the two column format
+\end{multicols}
+\newpage
+
+%cite all the references from the bibtex you haven't explicitly cited
+\nocite{*}
+
+\bibliographystyle{IEEEannot}
+
+\bibliography{paper}
+
+\end{document}
